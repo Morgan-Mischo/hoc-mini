@@ -14,7 +14,7 @@ function AccordianMenu(props) {
   )
 }
 
-export default withToggle(AccordianMenu )
+
 
 let styles = {
   menuTitle: {
@@ -28,3 +28,5 @@ let styles = {
     padding: 20
   }
 }
+
+export default withToggle(AccordianMenu); 
