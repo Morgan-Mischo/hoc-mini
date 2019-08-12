@@ -1,0 +1,30 @@
+import React from 'react'
+
+import withToggle from '../HOCs/withToggle'
+
+function AccordianMenu(props) {
+  let { toggle } = props
+  return (
+    <div>
+      <div style={styles.menuTitle} onClick={toggle.handleChange}>
+        {props.title}
+      </div>
+      {toggle.value && <div style={styles.menuBody}>{props.children}</div> }
+    </div>
+  )
+}
+
+export default withToggle(AccordianMenu )
+
+let styles = {
+  menuTitle: {
+    border: '1px solid black',
+    padding: 20
+  },
+  menuBody: {
+    border: '1px solid black',
+    borderTop: 'none',
+    backgroundColor: '#F0F0F0',
+    padding: 20
+  }
+}
