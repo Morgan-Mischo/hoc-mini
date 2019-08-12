@@ -1,6 +1,6 @@
 import React from 'react'
 
-import withToggle from '../HOCs/withToggle'
+import withToggle from '../hocs/withToggle'
 
 function AccordianMenu(props) {
   let { toggle } = props

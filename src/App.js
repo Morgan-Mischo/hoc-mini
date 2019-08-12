@@ -10,7 +10,9 @@ function App() {
     <div className="App">
       <SuperSecret isAuthenticated={true}/>
       <OnOffButton/>
-      <AccordianMenu />
+      <AccordianMenu title="Aloha">
+        
+      </AccordianMenu>
     </div>
   );
 }
